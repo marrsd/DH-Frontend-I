@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap");
+
+/*--------Estilos generales--------*/
+body {
+  margin: 0;
+  font-family: "Zen Kurenaido", sans-serif;
+}
+p {
+  font-size: 19px;
+}
+.title-subtitle {
+  background-color: #c4c4c4;
+  color: #005677;
+  letter-spacing: 10px;
+  padding-left: 20px;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.text-bold {
+  font-weight: bold;
+}
+.text-italic {
+  font-style: italic;
+}
+.text-whiteSpace {
+  white-space: pre;
+}
+
+/*--------Estilos header--------*/
+header {
+  align-items: flex-end;
+  background-color: #e5e5e5;
+  background-image: url("../assets/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  height: 300px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+header:after {
+  background-color: rgba(0, 0, 0, 0.2);
+  content: "";
+  left: 0;
+  height: 300px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+header div {
+  width: 100%;
+  z-index: 1;
+}
+header div h1 {
+  margin: 20px 0 0 0;
+}
+header div img {
+  width: 150px;
+  border-radius: 10%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+/*--------Estilos main--------*/
+main #academic-area ul,
+main #experience-area ul {
+  list-style: none;
+}
+main .accion_container {
+  margin-bottom: 50px;
+  text-align: center;
+  width: 100%;
+}
+main #AboutMeBtn,
+#backArrowBtn {
+  background-color: #2ecc71;
+  border-radius: 30px;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 20px;
+}
+
+#about_me {
+  font-size: 25px;
+  margin: auto;
+  text-align: center;
+  width: 600px;
+}
+#aboutMeContainer {
+  text-align: center;
+  padding: 20px;
+  background-color: #fab1a0;
+}
+
+/*--------Estilos footer--------*/
+footer {
+  color: white;
+  background-color: #005677;
+  display: flex;
+  margin-top: 90px;
+  justify-content: center;
+}
+footer p,
+a {
+  margin: 0;
+  padding: 5px 20px 5px 0;
+}
+
+footer .fa-instagram,
+.fa-linkedin,
+.fa-github,
+.fa-arrow-left {
+  color: white;
+}

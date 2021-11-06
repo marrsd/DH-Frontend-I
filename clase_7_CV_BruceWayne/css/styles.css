@@ -1,12 +1,11 @@
 body {
   margin: 0;
 }
-/*Estilos generales*/
+/*--------Estilos generales--------*/
 .title-subtitle {
   background-color: #c4c4c4;
   color: #005677;
   letter-spacing: 10px;
-  padding-left: 20px;
 }
 .text-uppercase {
   text-transform: uppercase;
@@ -21,23 +20,29 @@ body {
   white-space: pre;
 }
 
-/*Estilos header*/
+/*--------Estilos header--------*/
 header {
   text-align: center;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
   background-color: #e5e5e5;
 }
 header h1 {
   width: 100%;
 }
 
-/*Estilos main*/
+/*--------Estilos main--------*/
 main #academic-area ul,
 main #experience-area ul {
   list-style: none;
 }
+main #AboutMe {
+  color: black;
+  background-color: #2ecc71;
+  text-decoration: none;
+  font-size: 20px;
+}
 
-/*Estilos footer*/
+/*--------Estilos footer--------*/
 footer {
   color: white;
   background-color: #005677;
