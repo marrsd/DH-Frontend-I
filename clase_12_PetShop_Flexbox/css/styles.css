@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+:root {
+  --main-color-yellow: #f0a83e;
+  --main-color-brown: #3c2313;
+  --color-white: #ffffff;
+}
+
+/*-------------------Estilos generales-------------------*/
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.d-flex {
+  display: flex;
+}
+.justify-space-around {
+  justify-content: space-around;
+}
+.justify-space-between {
+  justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
+}
+.align-items-center {
+  align-items: center;
+}
+.txt-align-center {
+  text-align: center;
+}
+.border-radius-15 {
+  border-radius: 15px;
+}
+.border-none {
+  border: none;
+}
+.color-white {
+  color: var(--color-white);
+}
+.color-brown {
+  color: var(--main-color-brown);
+}
+
+/*-------------------Estilos para el Header-------------------*/
+header #configure {
+  background-color: #222222;
+  padding: 5px 50px 5px 100px;
+}
+header #configure ul {
+  width: 180px;
+}
+header #configure select {
+  background-color: transparent;
+  outline: none;
+}
+header nav {
+  background-color: var(--main-color-yellow);
+  height: 62px;
+  padding: 0 40px;
+}
+header nav ul {
+  width: 500px;
+}
+
+/*-------------------Estilos para el main-------------------*/
+#sectionNews {
+  background-image: url(../assets/bowl.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  justify-content: flex-end;
+}
+#sectionNews #news {
+  margin-right: 30px;
+  width: 490px;
+}
+#sectionNews #news h2 {
+  background-color: var(--color-white);
+  border-radius: 3px;
+  font-size: 40px;
+  font-weight: normal;
+  padding: 5px;
+}
+#sectionNews #news p {
+  font-size: 20px;
+  margin: 10px 0;
+}
+#sectionNews #news button {
+  background-color: var(--main-color-yellow);
+  border-radius: 3px;
+  font-size: 18px;
+  padding: 16px;
+}
+/*Seccion productos*/
+#sectionProducts #featuredProducts {
+  margin: 20px 0;
+}
+#sectionProducts #featuredProducts h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+#sectionProducts #featuredProducts ul {
+  color: #666666;
+}
+#sectionProducts #featuredProducts ul li {
+  padding-left: 5px;
+}
+#sectionProducts #allProducts {
+  gap: 20px;
+}
+#sectionProducts #allProducts .valueProduct {
+  color: var(--main-color-yellow);
+}
+#sectionProducts #allProducts .productContainer {
+  width: 265px;
+  height: 269px;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 10px;
+}
+#sectionProducts #allProducts #product1 {
+  background-image: url(../assets/churrasquito.png);
+}
+#sectionProducts #allProducts #product2 {
+  background-image: url(../assets/comedero.png);
+}
+#sectionProducts #allProducts #product3 {
+  background-image: url(../assets/Huesito.png);
+}
+
+/*Sección contacto*/
+#sectionContacts {
+  margin: 70px 0;
+}
+#sectionContacts h3 {
+  font-size: 30px;
+}
+#sectionContacts form {
+  padding-top: 30px;
+}
+#sectionContacts form input {
+  background-color: var(--main-color-brown);
+  display: block;
+  margin: 10px auto;
+  padding: 15px;
+  width: 350px;
+}
+#sectionContacts form input::placeholder {
+  color: var(--color-white);
+}
+#sectionContacts button {
+  font-size: 16px;
+  margin-top: 30px;
+  padding: 10px;
+  width: 110px;
+}
+#sectionContacts form #reset {
+  background-color: #8a8787;
+}
+#sectionContacts form #send {
+  background-color: var(--main-color-yellow);
+}
+/*Section Subscripción*/
+#sectionSubscription {
+  background-color: var(--main-color-yellow);
+  height: 60px;
+  padding: 0 20px;
+}
+#sectionSubscription #textSubscription img {
+  width: 40px;
+}
+#sectionSubscription #textSubscription p {
+  font-size: 20px;
+  padding-left: 10px;
+}
+#sectionSubscription input {
+  width: 271px;
+  height: 40px;
+}
+#sectionSubscription button {
+  background-color: var(--main-color-brown);
+  height: 34px;
+}
+
+/*-------------------Estilos para el footer-------------------*/
+footer {
+  background-color: var(--main-color-brown);
+}
+footer #contactData ul {
+  width: 50%;
+}
+footer #contactData ul li {
+  padding: 10px;
+  gap: 20px;
+}
+footer #contactData #logoFooter {
+  align-self: center;
+  width: 50%;
+}
+footer #right {
+  background-color: #222222;
+  padding: 10px;
+}
+footer #right #ContactLinks {
+  padding-left: 20px;
+}
