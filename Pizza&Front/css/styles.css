@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #e5e5e5;
+}
+
+/*----------------Estilos generales---------------*/
+.d-flex {
+  display: flex;
+}
+.d-none {
+  display: none;
+}
+.align-items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-content-around {
+  justify-content: space-around;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+ul {
+  list-style: none;
+}
+header,
+footer {
+  background-color: #222222;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/*----------------------Header--------------------*/
+header nav {
+  display: flex;
+}
+header nav ul {
+  width: 400px;
+}
+header #Menu {
+  height: 20px;
+}
+
+/*----------------------Footer--------------------*/
+main {
+  gap: 5px;
+  padding: 50px 20px;
+}
+main section {
+  border-radius: 5px;
+  height: 500px;
+  flex: 1 1 400px;
+}
+main #delivery {
+  background-image: url(../assets/delivery.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main #delivery h2 {
+  color: red;
+  margin: 30px 0 0 30px;
+  font-size: 30px;
+}
+main #delivery h2 span {
+  color: #ffffff;
+}
+main #topPizza {
+  background-color: #ffffff;
+}
+main #topPizza h2 {
+  color: red;
+  font-size: 30px;
+  margin-top: 30px;
+  text-align: center;
+}
+main #topPizza #top5 {
+  height: 400px;
+  font-size: 20px;
+}
+main #topPizza #top5 h3 {
+  margin-bottom: 25px;
+}
+main #topPizza #top5 ol li {
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+main #topPizza #top5 img {
+  width: 130px;
+}
+/*----------------------Footer--------------------*/
+footer ul li {
+  margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+  main #topPizza #top5 div {
+    z-index: 2;
+  }
+  main #topPizza #top5 img {
+    position: absolute;
+    z-index: 1;
+    opacity: 0.2;
+  }
+}
+@media (max-width: 645px) {
+  header nav {
+    display: none;
+  }
+  header #Menu {
+    display: block;
+  }
+  main {
+    flex-direction: column;
+  }
+}
+@media (max-width: 374px) {
+  main #delivery {
+    position: relative;
+  }
+  main #delivery h2 {
+    position: absolute;
+    width: 150px;
+  }
+  footer {
+    flex-direction: column-reverse;
+  }
+}

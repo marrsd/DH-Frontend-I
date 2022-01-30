@@ -1,0 +1,498 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-size: 16px;
+  margin: 0;
+}
+:root {
+  /*Primary colors*/
+  --bright-red: rgb(242, 95, 58);
+  --dark-blue: rgb(35, 44, 81);
+
+  /*Neutral colors*/
+  --dark-grayish-blue: rgb(143, 148, 167);
+  --dark-dark-blue: rgb(29, 30, 37);
+  --light-gray: rgb(249, 249, 249);
+  --pale-red: rgb(255, 239, 234);
+}
+body {
+  background-image: url("../imagenes/bg-tablet-pattern.svg");
+  background-size: 800px;
+  background-position: 120% -5%;
+  background-repeat: no-repeat;
+  font-family: "Be Vietnam Pro", sans-serif;
+  padding-top: 75.5px;
+}
+/*--------------GENERAL STYLES--------------*/
+a {
+  text-decoration: none;
+  font-weight: 500;
+}
+ul {
+  list-style: none;
+}
+p {
+  font-weight: 500;
+}
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+.d-none {
+  display: none;
+}
+.d-flex {
+  display: flex;
+}
+.d-block {
+  display: block;
+}
+.flex-column {
+  flex-direction: column;
+}
+.justify-space-around {
+  justify-content: space-around;
+}
+.align-items-center {
+  align-items: center;
+}
+.txt-align-center {
+  text-align: center;
+}
+.color-dark-blue {
+  color: var(--dark-blue);
+}
+.color-dark-gray {
+  color: var(--dark-grayish-blue);
+}
+.btn-orange {
+  background-color: var(--bright-red);
+  border-radius: 50px;
+  box-shadow: 0px 7px 7px rgb(242, 95, 58, 0.55);
+  color: var(--light-gray);
+  padding: 12.5px 30.5px;
+}
+.btn-orange:hover {
+  color: var(--pale-red);
+  box-shadow: 0px 12px 7px rgb(242, 95, 58, 0.55);
+}
+
+/*--------------HEADER STYLES--------------*/
+
+header nav {
+  width: 478px;
+}
+header nav ul li a:hover {
+  color: var(--dark-grayish-blue);
+}
+header .fa-bars {
+  display: none;
+}
+
+.sideNav {
+  height: 100%;
+  width: 250px;
+}
+.NavBar {
+  background: linear-gradient(
+    to bottom,
+    rgba(248, 173, 157, 1) 30%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  animation-name: sideNavBar;
+  animation-duration: 2s;
+}
+/*--------------MAIN STYLES--------------*/
+
+main {
+  padding: 124px 102px 0;
+  overflow-x: hidden;
+}
+main #intro div,
+main #info article {
+  width: 50%;
+}
+main #info,
+main #comments {
+  margin-top: 138px;
+}
+/*Section Intro*/
+main #intro div h1 {
+  font-size: 58px;
+}
+main #intro div p {
+  margin-top: 28px;
+  margin-bottom: calc(28px + 12.5px);
+  width: 350px;
+}
+/*Section Info*/
+main #info article:nth-child(1) h2 {
+  font-size: 36px;
+  width: 433px;
+}
+main #info article:nth-child(1) p {
+  margin-top: 36px;
+  width: 337px;
+}
+main #info article:nth-child(2) {
+  padding-left: calc(65px + 25px);
+}
+main #info article:nth-child(2) p {
+  margin: 18px 0 42px 0;
+  width: 440px;
+}
+main #info article:nth-child(2) h3 {
+  position: relative;
+}
+main #info article:nth-child(2) h3::before {
+  content: attr(num);
+  background-color: var(--bright-red);
+  border-radius: 30px;
+  color: var(--pale-red);
+  left: calc(-65px + -25px);
+  padding: 10px 25px;
+  position: absolute;
+  top: -10px;
+}
+/*Section Comments*/
+main #comments h2 {
+  font-size: 39px;
+  margin-bottom: 114px;
+  position: relative;
+}
+main #comments h2::before {
+  background-image: url("../imagenes/bg-tablet-pattern.svg");
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  content: "";
+  height: 800px;
+  left: -970px;
+  top: -350px;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+main #comments div {
+  margin-bottom: calc(25px + 12.5px);
+}
+main #comments div div article {
+  background-color: var(--light-gray);
+  padding: 30px;
+  position: relative;
+  width: 445px;
+}
+main #comments div div article:nth-child(2),
+main #comments div article:nth-child(3) {
+  margin-left: 10px;
+}
+main #comments div div article img {
+  height: 70px;
+  left: 180px;
+  position: absolute;
+  top: -40px;
+  width: 70px;
+}
+main #comments div div article h3 {
+  margin: 21px 0;
+}
+main #comments div div article p {
+  width: 360px;
+}
+
+main #getService {
+  background-color: var(--bright-red);
+  background-image: url("../imagenes/bg-simplify-section-desktop.svg");
+  height: 224px;
+  margin: 180px 0 0 -102px;
+  width: 100vw;
+}
+main #getService h2 {
+  color: var(--light-gray);
+  font-size: 30px;
+  width: 438px;
+}
+main #getService a {
+  background-color: var(--light-gray);
+  border-radius: 50px;
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+  color: var(--bright-red);
+  padding: 12.5px 30.5px;
+}
+
+/*--------------FOOTER STYLES--------------*/
+footer {
+  background-color: var(--dark-dark-blue);
+  color: var(--light-gray);
+  height: 247px;
+}
+footer div:nth-child(1) div i:hover {
+  color: var(--bright-red);
+}
+footer div div a {
+  color: var(--pale-red);
+}
+footer > div,
+footer div ul {
+  height: 150px;
+}
+footer div ul li {
+  height: 30px;
+}
+footer div ul li a {
+  color: var(--pale-red);
+}
+footer div ul li a:hover {
+  color: var(--bright-red);
+}
+footer #services {
+  width: 400px;
+  justify-content: space-between;
+}
+footer div:nth-child(3) form #email {
+  border: none;
+  border-radius: 50px;
+  color: var(--bright-red);
+  height: 44px;
+  outline: none;
+  padding-left: 15px;
+  width: 300px;
+}
+footer div:nth-child(3) form #email::placeholder {
+  color: var(--bright-red);
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+footer div:nth-child(3) form #email:invalid {
+  border: 2px solid #ea2027;
+}
+footer div:nth-child(3) form #email:valid {
+  color: #2ecc71;
+}
+footer div:nth-child(3) form #send {
+  background-color: var(--bright-red);
+  border: none;
+  border-radius: 50px;
+  color: var(--light-gray);
+  cursor: pointer;
+  padding: 10px 17px;
+}
+footer div:nth-child(3) form #send:hover {
+  opacity: 0.85;
+}
+
+@keyframes sideNavBar {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 250px;
+  }
+}
+
+/*---------------Media Query ---------------*/
+@media (max-width: 775px) {
+  p {
+    font-weight: 100;
+  }
+  /*----------Shared styles----------*/
+  header #cerrar {
+    justify-content: end;
+    margin: 0 20px 40px 20px;
+  }
+  header nav {
+    display: none;
+    padding-top: 50px;
+  }
+  header a {
+    display: none;
+    margin: 20px;
+  }
+  header nav ul li a .iconNav {
+    display: inline;
+    margin-right: 15px;
+  }
+  main #intro div,
+  main #info article:nth-child(1) h2 {
+    width: 100%;
+    font-size: 30px;
+  }
+  main #intro div:nth-child(1) p,
+  main #info article,
+  main #comments div div article,
+  main #info article:nth-child(1) p {
+    width: 100%;
+  }
+  main #intro,
+  footer,
+  footer div:nth-child(1) {
+    flex-direction: column-reverse;
+  }
+
+  /*----------Body style----------*/
+  body {
+    background-size: 500px;
+    background-position: 120% -1%;
+  }
+
+  /*----------Header style----------*/
+  header .fa-bars {
+    display: block;
+  }
+
+  /*----------Main style----------*/
+  main {
+    padding: 30px 20px 0 20px;
+  }
+  /*Intro Section style*/
+  main #intro {
+    text-align: center;
+  }
+  main #intro div:nth-child(2) img {
+    width: 350px;
+  }
+  main #intro div:nth-child(1) h1 {
+    font-size: 35px;
+  }
+  /*Info Section style*/
+  main #info {
+    display: block;
+    text-align: center;
+  }
+  main #info article {
+    margin-bottom: 55px;
+  }
+  main #info article:nth-child(2) {
+    padding: 0;
+  }
+  main #info article:nth-child(2) h3 {
+    background-color: var(--pale-red);
+    border-radius: 20px 0 0 20px;
+    text-align: start;
+    padding: 10px 0 10px 78px;
+    width: 100%;
+  }
+  main #info article:nth-child(2) h3::before {
+    left: 0;
+    top: 0;
+  }
+  main #info article:nth-child(2) p {
+    width: auto;
+  }
+  /*Comments Section style*/
+  main #comments {
+    margin-top: 100px;
+  }
+  main #comments h2 {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+  main #comments > div {
+    display: flex;
+    height: 350px;
+    overflow-x: scroll;
+    margin-bottom: 0;
+  }
+  main #comments div div {
+    align-items: center;
+    justify-content: normal;
+    margin-bottom: 0;
+    width: 100%;
+  }
+  main #comments div div article img {
+    left: 136px;
+  }
+  main #comments div div article p {
+    width: 275px;
+  }
+  main #comments aside {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  main #comments aside a {
+    border: 2px solid var(--bright-red);
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+  }
+  main #comments aside a:active {
+    background-color: var(--bright-red);
+  }
+
+  main #getService {
+    background-image: url("../imagenes/bg-simplify-section-mobile.svg");
+    background-repeat: no-repeat;
+    flex-direction: column;
+    height: 400px;
+    justify-content: space-evenly;
+    margin: 70px -20px 0 -20px;
+  }
+  main #getService h2 {
+    width: 300px;
+    font-size: 35px;
+    text-align: center;
+  }
+  /*Footer Section style*/
+  footer {
+    height: 600px;
+    position: relative;
+    padding: 20px;
+  }
+  footer div:nth-child(1) {
+    margin-bottom: 70px;
+  }
+  footer div:nth-child(3) p {
+    content: "";
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+  }
+  footer #services {
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  footer div:nth-child(3) form #email {
+    width: 270px;
+  }
+  footer div:nth-child(3) form #email::placeholder {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 375px) {
+  /*----------Body style----------*/
+  body {
+    background-size: 400px;
+    background-position: -297% -1%;
+  }
+
+  /*----------Main style----------*/
+
+  /*Info Section style*/
+  main #info article:nth-child(2) h3 {
+    background-color: var(--pale-red);
+    border-radius: 20px 0 0 20px;
+    text-align: start;
+    padding: 10px 0 10px 78px;
+    width: 355px;
+  }
+  /*Comments Section style*/
+  main #comments h2::before {
+    height: 400px;
+    left: 230px;
+    top: -1300px;
+    width: 300px;
+  }
+}

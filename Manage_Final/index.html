@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <title>Manage</title>
+</head>
+<body>
+  <header class="d-flex align-items-center justify-space-around">
+    <img src="imagenes/logo.svg" alt="Manage logo">
+    <nav id="ContainerNav">
+      <i class="fas fa-times d-none" onclick="closeNav()" id="cerrar"></i>
+      <ul class="d-flex justify-space-around" id="nav">
+        <li>
+          <a href="#" class="color-dark-blue">
+            <i class="fas fa-dollar-sign d-none iconNav"></i>
+            Pricing
+          </a>
+        </li>
+        <li>
+          <a href="#" class="color-dark-blue">
+            <i class="fab fa-product-hunt d-none iconNav"></i>
+            Product
+          </a>
+        </li>
+        <li>
+          <a href="#" class="color-dark-blue">
+            <i class="fas fa-user-tie d-none iconNav"></i>
+            About Us
+          </a>
+        </li>
+        <li>
+          <a href="#" class="color-dark-blue">
+            <i class="fas fa-book d-none iconNav"></i>
+            Careers
+          </a>
+        </li>
+        <li>
+          <a href="#" class="color-dark-blue">
+            <i class="fas fa-users d-none iconNav"></i>
+            Community
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <a href="#" class="btn-orange">Get started</a>
+    <i class="fas fa-bars" onclick="openNav()" class="d-block" id="abrir"></i>
+  </header>
+  <main>
+    <section class="d-flex" id="intro">
+      <div>
+        <h1 class="color-dark-blue">
+          Bring everyone together to build better products.
+        </h1>
+        <p class="color-dark-gray">
+          Manage makes it simple for software teams to plan day-to-day tasks while keeping the large team goals in view 
+        </p>
+        <a href="#" class="btn-orange">Get started</a>
+      </div>
+      <div>
+        <img src="imagenes/illustration-intro.svg" alt="graphic image">
+      </div>
+    </section>
+    <section class="d-flex" id="info">
+      <article>
+        <h2 class="color-dark-blue">
+          What´s different about Manage? 
+        </h2>
+        <p class="color-dark-gray">
+          Manage provides all the functionality your teas needs, without the complexity. Our software is tailor-made for modern digital product teams
+        </p>
+      </article>
+      <article>
+        <h3 num="01" class="color-dark-blue">
+          Track company-wide progress
+        </h3>
+        <p class="color-dark-gray">
+          See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.
+        </p>
+        <h3 num="02" class="color-dark-blue">
+          Advance built-in reports
+        </h3>
+        <p class="color-dark-gray">
+          Set internal delivery estimates and track progress toward company goals. Our customisable dashboard helps you build out the reports you need to keep key stakeholders informed.
+        </p>
+        <h3 num="03" class="color-dark-blue">
+          Everything you need in one place
+        </h3>
+        <p class="color-dark-gray">
+          Stop jumping from one service to another to communicate, store files, track tasks and share documents. Manage offers an all-in-one team productivity solution.
+        </p>
+      </article>
+    </section>
+    <section id="comments" class="txt-align-center">
+      <h2 class="color-dark-blue">
+        What they´ve said
+      </h2>
+      <div>
+        <div class="d-flex justify-space-around">
+          <article id="user1">
+            <img src="imagenes/avatar-anisha.png" alt="user 1 image">
+            <h3 class="txt-align-center">
+              Anisha Li
+            </h3>
+            <p class="txt-align-center color-dark-gray">
+              “Manage has supercharged our team´s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.”
+            </p>
+          </article>
+          <article id="user2">
+            <img src="imagenes/avatar-ali.png" alt="user 2 image">
+            <h3 class="txt-align-center">
+              Ali Bravo
+            </h3>
+            <p class="txt-align-center color-dark-gray">
+              “We have been able to cancel so many other subscriptions since using manage. There ir no more cross-channel confusion and everyone is much more focused.”
+            </p>
+          </article>
+          <article id="user3">
+            <img src="imagenes/avatar-richard.png" alt="user 3 image">
+            <h3 class="txt-align-center">
+              Richard Watts
+            </h3>
+            <p class="txt-align-center color-dark-gray">
+              “Manage allows us to provide structure and process. It keeps us organized and focused. I can´t stop recommending them to everyone i talk to!”
+            </p>
+          </article>
+        </div>
+      </div>
+      <aside class="d-none">
+        <a href="#user1"></a>
+        <a href="#user2"></a>
+        <a href="#user3"></a>
+      </aside>
+      <a href="#" class="btn-orange">Get started</a>
+    </section>
+    <section id="getService" class="d-flex align-items-center justify-space-around">
+      <h2>
+        Simplify how your team words today.
+      </h2>
+      <a href="#">Get started</a>
+    </section>
+  </main>
+  <footer class="d-flex justify-space-around align-items-center">
+    <div class="d-flex flex-column justify-space-around align-items-center">
+      <img src="imagenes/Logo-white.svg" alt="Manage Logo">
+      <div>
+        <a href="https://facebook.com" target="blank">
+          <i class="fab fa-facebook-square"></i>
+        </a>
+        <a href="https://www.youtube.com/" target="blank">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://twitter.com/" target="blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://co.pinterest.com/" target="blank">
+          <i class="fab fa-pinterest"></i>
+        </a>
+        <a href="https://www.instagram.com/" target="blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+    <div class="d-flex" id="services">
+      <nav>
+        <ul class="d-flex flex-column justify-space-around">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Pricing</a> 
+          </li>
+          <li>
+            <a href="#">Products</a>
+          </li>
+          <li>
+            <a href="#">About Us</a>
+          </li>
+        </ul>
+      </nav>
+      <nav>
+        <ul class="d-flex flex-column justify-space-around">
+          <li>
+            <a href="#">Careers</a>
+          </li>
+          <li>
+            <a href="#">Community</a>
+          </li>
+          <li>
+            <a href="#">Privacy Policy</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+    <div class="d-flex flex-column justify-space-around">
+      <form action="" method="post">
+        <label for="email"></label>
+        <input type="email" id="email" name="email" placeholder="Update in your inbox..." required>
+
+        <input type="submit" value="Go" id="send">
+      </form>
+      <p class="color-dark-gray">
+        Copyright 2020. All Rights Reserved
+      </p>
+    </div>
+  </footer>
+  <script src="./sideNav.js"></script>
+</body>
+
+</html>
